@@ -1,0 +1,436 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/drawerLayout"
+    tools:context=".activity.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <include
+            layout="@layout/app_bar_main"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="@dimen/_240sdp"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:layout_gravity="left|start"
+        android:fitsSystemWindows="true"
+        xmlns:android="http://schemas.android.com/apk/res/android">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <com.reward.dne.utils.CustomTextViewSemiBold
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Current Earnings"
+                    android:layout_marginHorizontal="@dimen/_15sdp"
+                    android:layout_marginVertical="@dimen/_10sdp"
+
+                    android:textColor="@color/black"
+                    />
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:background="@drawable/curve_grey"
+                    android:padding="@dimen/_5sdp"
+                    android:layout_marginHorizontal="@dimen/_15sdp"
+                    android:layout_height="wrap_content">
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:id="@+id/imgWallet"
+                        android:layout_margin="@dimen/_2sdp"
+                        android:layout_marginLeft="@dimen/_7sdp"
+                        android:layout_centerVertical="true"
+                        android:src="@mipmap/wallet"
+                        />
+                    <com.reward.dne.utils.CustomTextViewBold
+                        android:id="@+id/tv_menuAmount"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="₹0"
+                        android:layout_centerVertical="true"
+                        android:textSize="18sp"
+                        android:layout_margin="@dimen/_2sdp"
+                        android:layout_marginLeft="@dimen/_7sdp"
+                        android:layout_toRightOf="@+id/imgWallet"
+                        android:textColor="@color/redtext"
+                        android:textStyle="bold"
+                        />
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/_2sdp"
+                        android:id="@+id/menuRedeem"
+                        android:layout_alignParentRight="true"
+                        android:background="@drawable/curve_redeem">
+
+                        <com.reward.dne.utils.CustomTextViewSemiBold
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingHorizontal="@dimen/_10sdp"
+                            android:paddingVertical="@dimen/_5sdp"
+                            android:textColor="@color/white"
+                            android:text="Redeem"
+                            />
+
+                    </RelativeLayout>
+
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:padding="@dimen/_10sdp"
+                        android:id="@+id/menuHome"
+                        android:background="?attr/selectableItemBackground"
+                        android:clickable="true"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="@dimen/_10sdp"
+                            android:src="@mipmap/home"
+                            />
+                        <com.reward.dne.utils.CustomTextViewSemiBold
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/_12sdp"
+                            android:textSize="15sp"
+                            android:textColor="@color/black"
+                            android:layout_gravity="center"
+                            android:text="Home"
+                            />
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:padding="@dimen/_10sdp"
+                        android:id="@+id/menuHotApps"
+                        android:background="?attr/selectableItemBackground"
+                        android:clickable="true"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="18dp"
+                            android:layout_height="18dp"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="@dimen/_10sdp"
+                            android:src="@mipmap/hotapps"
+                            />
+                        <com.reward.dne.utils.CustomTextViewSemiBold
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/_12sdp"
+                            android:textSize="15sp"
+                            android:textColor="@color/black"
+                            android:layout_gravity="center"
+                            android:text="Hot Apps"
+                            />
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:padding="@dimen/_10sdp"
+                        android:id="@+id/menuEarnings"
+                        android:background="?attr/selectableItemBackground"
+                        android:clickable="true"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="@dimen/_10sdp"
+                            android:src="@mipmap/earning"
+                            />
+                        <com.reward.dne.utils.CustomTextViewSemiBold
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/_12sdp"
+                            android:textSize="15sp"
+                            android:textColor="@color/black"
+                            android:layout_gravity="center"
+                            android:text="Earnings"
+                            />
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:padding="@dimen/_10sdp"
+                        android:id="@+id/menuEarningHistory"
+                        android:background="?attr/selectableItemBackground"
+                        android:clickable="true"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="@dimen/_10sdp"
+                            android:src="@mipmap/earninghis"
+                            />
+                        <com.reward.dne.utils.CustomTextViewSemiBold
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/_12sdp"
+                            android:textSize="15sp"
+                            android:textColor="@color/black"
+                            android:layout_gravity="center"
+                            android:text="Earning History"
+                            />
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:padding="@dimen/_10sdp"
+                        android:id="@+id/menuProfile"
+                        android:background="?attr/selectableItemBackground"
+                        android:clickable="true"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="@dimen/_10sdp"
+                            android:src="@mipmap/gender"
+                            />
+                        <com.reward.dne.utils.CustomTextViewSemiBold
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/_12sdp"
+                            android:textSize="15sp"
+                            android:textColor="@color/black"
+                            android:layout_gravity="center"
+                            android:text="My Profile"
+                            />
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:padding="@dimen/_10sdp"
+                        android:id="@+id/menuProMember"
+                        android:visibility="gone"
+                        android:background="?attr/selectableItemBackground"
+                        android:clickable="true"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="@dimen/_10sdp"
+                            android:src="@mipmap/promember"
+                            />
+                        <com.reward.dne.utils.CustomTextViewSemiBold
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/_12sdp"
+                            android:textSize="15sp"
+                            android:textColor="@color/black"
+                            android:layout_gravity="center"
+                            android:text="Pro Membership"
+                            />
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:padding="@dimen/_10sdp"
+                        android:id="@+id/menuInvite"
+                        android:background="?attr/selectableItemBackground"
+                        android:clickable="true"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="@dimen/_10sdp"
+                            android:src="@mipmap/invite"
+                            />
+                        <com.reward.dne.utils.CustomTextViewSemiBold
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/_12sdp"
+                            android:textSize="15sp"
+                            android:textColor="@color/black"
+                            android:layout_gravity="center"
+                            android:text="Invite to Earn"
+                            />
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:padding="@dimen/_10sdp"
+                        android:id="@+id/menuRate"
+                        android:background="?attr/selectableItemBackground"
+                        android:clickable="true"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="@dimen/_10sdp"
+                            android:src="@mipmap/rate"
+                            />
+                        <com.reward.dne.utils.CustomTextViewSemiBold
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/_12sdp"
+                            android:textSize="15sp"
+                            android:textColor="@color/black"
+                            android:layout_gravity="center"
+                            android:text="Rate our App"
+                            />
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:padding="@dimen/_10sdp"
+                        android:id="@+id/menuHelp"
+                        android:background="?attr/selectableItemBackground"
+                        android:clickable="true"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="@dimen/_10sdp"
+                            android:src="@mipmap/help"
+                            />
+                        <com.reward.dne.utils.CustomTextViewSemiBold
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/_12sdp"
+                            android:textSize="15sp"
+                            android:textColor="@color/black"
+                            android:layout_gravity="center"
+                            android:text="Help"
+                            />
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:padding="@dimen/_10sdp"
+                        android:id="@+id/menuFAQ"
+                        android:background="?attr/selectableItemBackground"
+                        android:clickable="true"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="@dimen/_10sdp"
+                            android:src="@mipmap/faq"
+                            />
+                        <com.reward.dne.utils.CustomTextViewSemiBold
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/_12sdp"
+                            android:textSize="15sp"
+                            android:textColor="@color/black"
+                            android:layout_gravity="center"
+                            android:text="FAQ"
+                            />
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:padding="@dimen/_10sdp"
+                        android:id="@+id/menuLogout"
+                        android:background="?attr/selectableItemBackground"
+                        android:clickable="true"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="@dimen/_10sdp"
+                            android:src="@mipmap/logout"
+                            />
+                        <com.reward.dne.utils.CustomTextViewSemiBold
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/_12sdp"
+                            android:textSize="15sp"
+                            android:textColor="@color/black"
+                            android:layout_gravity="center"
+                            android:text="Exit"
+                            />
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+        </ScrollView>
+
+    </LinearLayout>
+
+
+
+
+</android.support.v4.widget.DrawerLayout>

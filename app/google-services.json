@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "645225487632",
+    "firebase_url": "https://rewarddne.firebaseio.com",
+    "project_id": "rewarddne",
+    "storage_bucket": "rewarddne.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:645225487632:android:436848678f7e1ec79e5995",
+        "android_client_info": {
+          "package_name": "com.reward.dne"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "645225487632-74q9sqk1brcdp1hsogk5ikvg7bbsvl7l.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCS3Fb4fewSomGLSrCLk9MmbA9w9y8rOfA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "645225487632-74q9sqk1brcdp1hsogk5ikvg7bbsvl7l.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

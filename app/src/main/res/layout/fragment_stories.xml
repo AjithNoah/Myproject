@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment.StoriesFragment">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/formback"
+        android:padding="@dimen/_13sdp"
+        android:id="@+id/rlstory"
+        >
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@mipmap/gift"
+            android:id="@+id/imgGift"
+            />
+        <com.reward.dne.utils.CustomTextViewSemiBold
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:layout_centerVertical="true"
+            android:textSize="14sp"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_toRightOf="@+id/imgGift"
+            android:text="Read the full story and Earn 2"
+            />
+        <com.reward.dne.utils.CustomTextViewSemiBold
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorPrimary"
+            android:layout_centerVertical="true"
+            android:textSize="14sp"
+            android:visibility="gone"
+            android:layout_marginRight="@dimen/_5sdp"
+            android:layout_alignParentRight="true"
+            android:text="Submit"
+            />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_10sdp"
+        android:layout_below="@+id/rlstory">
+
+        <com.reward.dne.utils.CustomTextViewBold
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textTitle"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:layout_marginHorizontal="@dimen/_10sdp"
+            />
+        <com.reward.dne.utils.CustomTextViewNormal
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:id="@+id/storyDes"
+            android:layout_marginHorizontal="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:textColor="@color/greymedium"
+            android:layout_below="@+id/textTitle"
+
+            />
+
+    </RelativeLayout>
+
+</RelativeLayout>

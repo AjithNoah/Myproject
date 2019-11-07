@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment.InviteFragment">
+
+
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:orientation="vertical"
+           android:layout_height="match_parent">
+
+           <RelativeLayout
+               android:layout_width="match_parent"
+               android:background="@color/colorPrimary"
+               android:layout_weight="3"
+               android:layout_height="@dimen/_60sdp">
+
+               <RelativeLayout
+                   android:layout_width="match_parent"
+                   android:layout_above="@+id/imgInvite"
+                   android:layout_marginBottom="@dimen/_20sdp"
+                   android:layout_height="wrap_content">
+                   <com.reward.dne.utils.CustomTextViewBold
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:textColor="@color/white"
+                       android:textSize="20sp"
+                       android:id="@+id/textInvite"
+                       android:layout_centerHorizontal="true"
+                       android:text="Invite your friends and earn"
+                       />
+                   <com.reward.dne.utils.CustomTextViewSemiBold
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:layout_centerHorizontal="true"
+                       android:textColor="@color/white"
+                       android:textSize="13sp"
+                       android:layout_below="@+id/textInvite"
+                       android:text="For each successful registration."
+                       />
+
+               </RelativeLayout>
+
+
+
+               <ImageView
+                   android:layout_width="match_parent"
+                   android:layout_height="@dimen/_180sdp"
+                   android:id="@+id/imgInvite"
+                   android:layout_marginHorizontal="@dimen/_20sdp"
+                   android:layout_alignParentBottom="true"
+                   android:src="@mipmap/invitevector"
+                   />
+
+           </RelativeLayout>
+           <RelativeLayout
+               android:layout_width="match_parent"
+               android:layout_weight="1"
+               android:layout_marginTop="-40dp"
+               android:background="@drawable/curve_white"
+               android:layout_height="@dimen/_120sdp">
+
+               <com.reward.dne.utils.CustomTextViewSemiBold
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="Your referral Code"
+                   android:textSize="15sp"
+                   android:id="@+id/textRefferal"
+                   android:layout_marginTop="@dimen/_20sdp"
+                   android:textColor="@color/black"
+                   android:layout_centerHorizontal="true"
+                   />
+               <RelativeLayout
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_marginTop="@dimen/_10sdp"
+                   android:id="@+id/relativeCode"
+                   android:layout_centerHorizontal="true"
+                   android:layout_below="@+id/textRefferal"
+                   android:background="@drawable/curve_grey"
+                   >
+                   <com.reward.dne.utils.CustomTextViewSemiBold
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:id="@+id/textMyReferral"
+                       android:layout_centerHorizontal="true"
+                       android:paddingVertical="@dimen/_7sdp"
+                       android:paddingHorizontal="@dimen/_45sdp"
+                       android:maxLength="30"
+                       android:textSize="18sp"
+                       android:textColor="@color/black"
+                       />
+
+               </RelativeLayout>
+
+               <com.reward.dne.utils.CustomTextViewSemiBold
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="Share invite through"
+                   android:layout_marginTop="@dimen/_30sdp"
+                   android:id="@+id/textShare"
+                   android:layout_centerHorizontal="true"
+                   android:layout_below="@+id/relativeCode"
+                   android:textColor="@color/black"
+                   android:textSize="15sp"
+                   />
+
+               <LinearLayout
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_centerHorizontal="true"
+                   android:layout_marginTop="@dimen/_15sdp"
+                   android:layout_below="@+id/textShare"
+                   android:orientation="horizontal">
+
+                   <ImageView
+                       android:layout_width="40dp"
+                       android:layout_height="40dp"
+                       android:id="@+id/imgFb"
+                       android:src="@mipmap/facebook"
+                       android:layout_marginRight="@dimen/_12sdp"
+                       />
+                   <ImageView
+                       android:layout_width="40dp"
+                       android:layout_height="40dp"
+                       android:src="@mipmap/twitter"
+                       android:id="@+id/imgTwitter"
+                       android:layout_marginRight="@dimen/_12sdp"
+                       />
+                   <ImageView
+                       android:layout_width="40dp"
+                       android:layout_height="40dp"
+                       android:src="@mipmap/mail"
+                       android:id="@+id/imgMail"
+                       android:layout_marginRight="@dimen/_12sdp"
+                       />
+                   <ImageView
+                       android:layout_width="40dp"
+                       android:layout_height="40dp"
+                       android:src="@mipmap/whatsapp"
+                       android:id="@+id/imgWhatsapp"
+                       android:layout_marginRight="@dimen/_10sdp"
+                       />
+
+
+
+
+               </LinearLayout>
+
+
+
+
+
+           </RelativeLayout>
+
+       </LinearLayout>
+
+
+</RelativeLayout>

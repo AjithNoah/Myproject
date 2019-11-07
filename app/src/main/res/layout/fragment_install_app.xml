@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".fragment.InstallAppFragment">
+
+   <!-- <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/toolHeader">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingBottom="@dimen/_20sdp">
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/cardApp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/_10sdp"
+                    app:cardCornerRadius="@dimen/_5sdp"
+                    app:cardMaxElevation="@dimen/_5sdp"
+                    app:cardUseCompatPadding="true">
+
+                    <RelativeLayout
+                        android:id="@+id/relativeAppName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/_10sdp">
+
+                        <ImageView
+                            android:id="@+id/imgApplogo"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp" />
+
+                        <com.dci.rewardapp.utils.CustomTextViewBold
+                            android:id="@+id/textAppName"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/_10sdp"
+                            android:layout_marginTop="@dimen/_10sdp"
+                            android:layout_toRightOf="@+id/imgApplogo"
+                            android:textColor="@color/black"
+                            android:textSize="18sp" />
+
+                        <com.dci.rewardapp.utils.CustomTextViewSemiBold
+                            android:id="@+id/textAppDesc"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/textAppName"
+                            android:layout_marginHorizontal="@dimen/_10sdp"
+                            android:layout_marginTop="@dimen/_15sdp"
+                            android:textSize="13sp" />
+
+
+                    </RelativeLayout>
+
+                </android.support.v7.widget.CardView>
+
+                <RelativeLayout
+                    android:id="@+id/relativeDownload"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/cardApp"
+                    android:layout_marginTop="@dimen/_10sdp">
+
+                    <ImageView
+                        android:id="@+id/imggft"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_centerHorizontal="true"
+                        android:src="@mipmap/giftbig" />
+
+                    <com.dci.rewardapp.utils.CustomTextViewBold
+                        android:id="@+id/textAppPoints"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/imggft"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="20sp" />
+
+                </RelativeLayout>
+
+                <com.dci.rewardapp.utils.CustomTextViewSemiBold
+                    android:id="@+id/textclick"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/relativeDownload"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="@dimen/_25sdp"
+                    android:text="Click here to download the app from Play Store"
+                    android:textSize="14sp" />
+
+                <RelativeLayout
+                    android:id="@+id/relInstall"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/textclick"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="@dimen/_15sdp"
+                    android:background="@drawable/curve_orange">
+
+                    <com.dci.rewardapp.utils.CustomTextViewSemiBold
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingHorizontal="@dimen/_95sdp"
+
+                        android:paddingVertical="@dimen/_10sdp"
+                        android:text="Install"
+                        android:textColor="@color/white" />
+
+                </RelativeLayout>
+
+
+            </RelativeLayout>
+
+        </ScrollView>
+
+    </LinearLayout>-->
+
+</RelativeLayout>

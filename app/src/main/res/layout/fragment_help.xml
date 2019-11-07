@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".fragment.HelpFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            app:cardUseCompatPadding="true"
+            android:layout_margin="@dimen/_10sdp"
+            android:elevation="@dimen/_5sdp"
+            app:cardCornerRadius="@dimen/_5sdp"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_20sdp"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <com.reward.dne.utils.CustomTextViewBold
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="How can we help You?"
+                        android:layout_centerVertical="true"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:layout_marginBottom="@dimen/_10sdp"
+                        android:textSize="18sp"
+                        android:textColor="@color/colorPrimary"
+                        />
+                    <com.reward.dne.utils.CustomTextViewSemiBold
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="FAQ's"
+                        android:visibility="invisible"
+                        android:layout_centerVertical="true"
+                        android:textSize="14sp"
+                        android:padding="@dimen/_5sdp"
+                        android:textColor="@color/colorPrimary"
+                        android:layout_alignParentRight="true"
+                        />
+                </RelativeLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="vertical"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:layout_height="wrap_content">
+
+                    <com.reward.dne.utils.CustomTextViewSemiBold
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/name"
+                        android:textSize="13sp"
+                        />
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/sourcesanspro_semibold"
+                        android:inputType="text"
+                        android:hint="Enter name"
+                        android:id="@+id/edtName"
+                        android:layout_marginRight="@dimen/_10sdp"
+                        android:background="@null"
+                        android:textSize="15sp"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:textColor="@color/black"
+                        />
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:background="@color/greyline"
+                        />
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="vertical"
+                    android:layout_marginTop="@dimen/_13sdp"
+                    android:layout_height="wrap_content">
+
+                    <com.reward.dne.utils.CustomTextViewSemiBold
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/email"
+                        android:textSize="13sp"
+                        />
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Enter email"
+                        android:id="@+id/edtEmail"
+                        android:fontFamily="@font/sourcesanspro_semibold"
+                        android:layout_marginRight="@dimen/_10sdp"
+                        android:background="@null"
+                        android:inputType="textEmailAddress"
+                        android:textSize="15sp"
+                        android:layout_marginTop="@dimen/_7sdp"
+                        android:textColor="@color/black"
+                        />
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:background="@color/greyline"
+                        />
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="vertical"
+                    android:layout_marginTop="@dimen/_13sdp"
+                    android:layout_height="wrap_content">
+
+                    <com.reward.dne.utils.CustomTextViewSemiBold
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/subject"
+                        android:textSize="13sp"
+                        />
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_7sdp"
+                        android:background="@null"
+                        android:id="@+id/edtSubject"
+                        android:fontFamily="@font/sourcesanspro_semibold"
+                        android:hint="Enter subject"
+                        android:inputType="text"
+                        android:layout_marginRight="@dimen/_10sdp"
+                        android:textColor="@color/black"
+                        android:textSize="15sp" />
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:background="@color/greyline"
+                        />
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="vertical"
+                    android:layout_marginTop="@dimen/_13sdp"
+                    android:layout_height="wrap_content">
+
+                    <com.reward.dne.utils.CustomTextViewSemiBold
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/describe"
+                        android:textSize="13sp"
+                        />
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@null"
+                        android:id="@+id/edtDescription"
+                        android:fontFamily="@font/sourcesanspro_semibold"
+                        android:inputType="text|textMultiLine|textCapSentences"
+                        android:hint="Enter description"
+                        android:textSize="15sp"
+                        android:scrollbars="vertical"
+                        android:layout_marginTop="@dimen/_7sdp"
+                        android:textColor="@color/black"
+                        />
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:background="@color/greyline"
+                        />
+
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_35sdp"
+                    android:hapticFeedbackEnabled="true"
+                    android:id="@+id/relativeSendNow"
+                    android:layout_marginTop="@dimen/_25sdp"
+                    android:layout_marginHorizontal="@dimen/_15sdp"
+                    android:layout_below="@+id/relativeEdit"
+                    android:background="@drawable/curve_orange">
+
+                    <com.reward.dne.utils.CustomTextViewBold
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Send Now"
+                        android:textSize="15sp"
+                        android:layout_centerInParent="true"
+                        android:textColor="@color/white"
+                        />
+
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_10sdp">
+                </RelativeLayout>
+
+
+            </LinearLayout>
+
+
+
+        </android.support.v7.widget.CardView>
+
+    </ScrollView>
+
+
+
+
+
+</RelativeLayout>

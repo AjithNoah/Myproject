@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="#FFF"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:layout_width="120dp"
+            android:layout_height="80dp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/imgLogoPaytm"
+            android:src="@mipmap/paytmlogo"
+            />
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@mipmap/greentick"
+            android:id="@+id/imgTick"
+            android:layout_below="@+id/imgLogoPaytm"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/_10sdp"
+            />
+        <com.reward.dne.utils.CustomTextViewSemiBold
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textAccepted"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/imgTick"
+            android:text="Request Accepted"
+            android:textSize="18sp"
+            android:textColor="@color/black"
+            />
+
+        <com.reward.dne.utils.CustomTextViewBold
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="₹1"
+            android:id="@+id/textAmount"
+            android:textColor="@color/black"
+            android:textSize="22sp"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/textAccepted"
+            />
+
+        <com.reward.dne.utils.CustomTextViewNormal
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginHorizontal="@dimen/_20sdp"
+            android:text="Payment processing to"
+            android:id="@+id/textSent"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/textAmount"
+            />
+        <com.reward.dne.utils.CustomTextViewBold
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="+919876543210"
+            android:id="@+id/textSentNumber"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/textSent"
+            />
+
+        <com.reward.dne.utils.CustomTextViewNormal
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_below="@+id/textSentNumber"
+            android:gravity="center"
+            android:id="@+id/textReference"
+            android:layout_marginHorizontal="@dimen/_26sdp"
+            />
+
+        <ProgressBar
+            android:layout_width="@dimen/_30sdp"
+            android:layout_height="@dimen/_30sdp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_below="@+id/textReference"
+            android:id="@+id/progress"
+            />
+
+        <com.reward.dne.utils.CustomTextViewNormal
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="11.02 am 20/9/2019"
+            android:id="@+id/textTime"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/progress"
+            />
+
+        <com.reward.dne.utils.CustomTextViewNormal
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Txn Id ORD65151516165161"
+            android:id="@+id/textTxnId"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/textTime"
+            />
+
+        <com.reward.dne.utils.CustomTextViewNormal
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Please do not close or refresh this page "
+            android:id="@+id/textdonot"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/textTxnId"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:id="@+id/relRetry"
+            android:orientation="horizontal"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_below="@+id/textdonot"
+            >
+
+            <Button
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:text="retry"
+                android:visibility="gone"
+                android:padding="@dimen/_3sdp"
+                android:id="@+id/btnRetry"
+                android:textColor="@color/white"
+                android:background="@color/colorPrimary"
+                />
+            <Button
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:text="close"
+                android:visibility="gone"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:padding="@dimen/_3sdp"
+                android:id="@+id/btnClose"
+                android:textColor="@color/white"
+                android:background="@color/colorPrimary"
+                />
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

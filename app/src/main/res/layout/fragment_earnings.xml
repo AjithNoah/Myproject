@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".fragment.EarningsFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/relativeParent"
+        >
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_marginHorizontal="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            app:cardUseCompatPadding="true"
+            android:id="@+id/cardTotal"
+            app:cardElevation="@dimen/_5sdp"
+            app:cardCornerRadius="@dimen/_5sdp"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_10sdp"
+                >
+
+                <com.reward.dne.utils.CustomTextViewSemiBold
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:layout_centerHorizontal="true"
+                    android:id="@+id/textTotalEarnings"
+                    android:text="Total Earnings"
+                    android:textSize="15sp"
+                    />
+                <com.reward.dne.utils.CustomTextViewSemiBold
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="25sp"
+                    android:id="@+id/textmyTotal"
+                    android:layout_centerHorizontal="true"
+                    android:layout_below="@+id/textTotalEarnings"
+                    android:textColor="@color/colorPrimary"
+                    />
+
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:id="@+id/linearAmount"
+            android:baselineAligned="false"
+            android:layout_below="@+id/cardTotal">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_weight="1"
+                >
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    app:cardUseCompatPadding="true"
+                    android:id="@+id/cardAvailable"
+                    app:cardElevation="@dimen/_5sdp"
+                    app:cardCornerRadius="@dimen/_5sdp"
+                    android:layout_height="wrap_content">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/_10sdp"
+                        >
+
+                        <com.reward.dne.utils.CustomTextViewSemiBold
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="@dimen/_5sdp"
+                            android:id="@+id/textavailable"
+                            android:text="Available Amount"
+                            android:textSize="15sp"
+                            />
+                        <com.reward.dne.utils.CustomTextViewSemiBold
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="20sp"
+                            android:id="@+id/textmyAvailable"
+                            android:layout_centerHorizontal="true"
+                            android:layout_below="@+id/textavailable"
+                            android:textColor="@color/colorPrimary"
+                            />
+
+                    </RelativeLayout>
+                </android.support.v7.widget.CardView>
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/_10sdp"
+                android:layout_weight="1"
+                >
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    app:cardUseCompatPadding="true"
+                    android:id="@+id/cardPending"
+                    app:cardElevation="@dimen/_5sdp"
+                    app:cardCornerRadius="@dimen/_5sdp"
+                    android:layout_height="wrap_content">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/_10sdp"
+                        >
+
+                        <com.reward.dne.utils.CustomTextViewSemiBold
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:id="@+id/textpending"
+                            android:layout_marginTop="@dimen/_5sdp"
+                            android:text="Redeem Amount"
+                            android:textSize="15sp"
+                            />
+                        <com.reward.dne.utils.CustomTextViewBold
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="20sp"
+                            android:id="@+id/textmyPending"
+                            android:layout_centerHorizontal="true"
+                            android:layout_below="@+id/textpending"
+                            android:textColor="@color/black"
+                            />
+
+                    </RelativeLayout>
+                </android.support.v7.widget.CardView>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_marginHorizontal="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            app:cardUseCompatPadding="true"
+            android:layout_below="@+id/linearAmount"
+            app:cardElevation="@dimen/_5sdp"
+            app:cardCornerRadius="@dimen/_5sdp"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_10sdp"
+                >
+
+                <com.reward.dne.utils.CustomTextViewSemiBold
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:layout_centerHorizontal="true"
+                    android:id="@+id/textTotalPoints"
+                    android:text="Total Points"
+                    android:textSize="15sp"
+                    />
+                <com.reward.dne.utils.CustomTextViewSemiBold
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="25sp"
+                    android:id="@+id/textmyTotalPoints"
+                    android:layout_centerHorizontal="true"
+                    android:layout_below="@+id/textTotalPoints"
+                    android:textColor="@color/colorPrimary"
+                    />
+
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_35sdp"
+            android:hapticFeedbackEnabled="true"
+            android:layout_alignParentBottom="true"
+            android:id="@+id/relativeRedeem"
+            android:layout_marginVertical="@dimen/_55sdp"
+            android:layout_marginHorizontal="@dimen/_55sdp"
+            android:layout_below="@+id/relativeEdit"
+            android:background="@drawable/curve_orange">
+
+            <com.reward.dne.utils.CustomTextViewBold
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Redeem Now"
+                android:textSize="15sp"
+                android:layout_centerInParent="true"
+                android:textColor="@color/white"
+                />
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+
+
+</RelativeLayout>

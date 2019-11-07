@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+   <RelativeLayout
+       android:layout_width="match_parent"
+       android:background="@color/colorPrimary"
+       android:id="@+id/toolHeader"
+       android:layout_height="@dimen/_40sdp">
+
+       <ImageView
+           android:layout_width="30dp"
+           android:layout_height="30dp"
+           android:layout_marginHorizontal="@dimen/_8sdp"
+           android:layout_centerVertical="true"
+           android:id="@+id/imgMenu"
+           android:src="@mipmap/menu"
+           />
+       <com.reward.dne.utils.CustomTextViewSemiBold
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="Home"
+           android:textSize="16sp"
+           android:id="@+id/headerName"
+           android:layout_toRightOf="@+id/imgMenu"
+           android:layout_centerVertical="true"
+           android:textColor="@color/white"
+           />
+       <RelativeLayout
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_centerVertical="true"
+           android:id="@+id/relativeWalletAmount"
+           android:layout_marginRight="@dimen/_10sdp"
+           android:layout_alignParentRight="true">
+
+           <ImageView
+               android:layout_width="23dp"
+               android:layout_height="23dp"
+               android:id="@+id/imgWallet"
+               android:layout_centerVertical="true"
+               android:layout_marginHorizontal="@dimen/_5sdp"
+               android:src="@mipmap/walletwhite"
+               />
+
+           <com.reward.dne.utils.CustomTextViewBold
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="₹0"
+               android:textSize="18sp"
+               android:layout_marginRight="@dimen/_5sdp"
+               android:layout_centerVertical="true"
+               android:layout_toRightOf="@+id/imgWallet"
+               android:id="@+id/textAmount"
+               android:textColor="@color/white"
+               />
+
+       </RelativeLayout>
+       <com.reward.dne.utils.CustomTextViewSemiBold
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="Edit"
+           android:visibility="gone"
+           android:id="@+id/textEditProfile"
+           android:layout_marginRight="@dimen/_10sdp"
+           android:layout_alignParentRight="true"
+           android:layout_centerVertical="true"
+           android:textColor="@color/white"
+           />
+
+   </RelativeLayout>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_below="@+id/toolHeader"
+        android:id="@+id/mainFrameContainer"
+        android:layout_height="match_parent">
+
+    </FrameLayout>
+</RelativeLayout>

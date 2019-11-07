@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#DD300B</color>
+    <color name="colorPrimaryDark">#C32908</color>
+    <color name="colorAccent">#DD300B</color>
+    <color name="white">#FFF</color>
+    <color name="black">#000000</color>
+    <color name="green">#1CAE35</color>
+    <color name="redtext">#CA3718</color>
+    <color name="lightgrey">#9F9F9F</color>
+    <color name="greyline">#CACACA</color>
+    <color name="greymedium">#939393</color>
+    <color name="greydark">#6D6D6D</color>
+    <color name="formback">#F2F3F3</color>
+
+
+</resources>

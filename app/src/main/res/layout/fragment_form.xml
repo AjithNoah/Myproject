@@ -1,0 +1,320 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment.FormFragment">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/formback"
+        android:padding="@dimen/_13sdp"
+        android:id="@+id/rlEarn"
+        >
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@mipmap/gift"
+            android:id="@+id/imgGift"
+            />
+        <com.reward.dne.utils.CustomTextViewSemiBold
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:layout_centerVertical="true"
+            android:textSize="14sp"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_toRightOf="@+id/imgGift"
+            android:text="Complete form and Earn 2"
+            />
+        <com.reward.dne.utils.CustomTextViewSemiBold
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorPrimary"
+            android:layout_centerVertical="true"
+            android:textSize="14sp"
+            android:layout_marginRight="@dimen/_5sdp"
+            android:layout_alignParentRight="true"
+            android:text="Submit"
+            />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_15sdp"
+        android:layout_below="@+id/rlEarn"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:padding="@dimen/_5sdp"
+            android:layout_height="wrap_content">
+
+            <com.reward.dne.utils.CustomTextViewSemiBold
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Your Name"
+                android:id="@+id/textName"
+                android:textSize="12sp"
+                />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/linearName"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:layout_below="@+id/textName"
+                android:orientation="horizontal"
+                >
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:background="@null"
+                    android:textSize="14sp"
+                    android:fontFamily="@font/sourcesanspro_semibold"
+                    android:id="@+id/editName"
+                    android:inputType="textEmailAddress"
+                    android:layout_gravity="center"
+                    android:layout_toRightOf="@+id/imgEmail"
+                    android:layout_below="@+id/textEmail"
+                    android:hint="John"
+
+                    />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.1dp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_below="@+id/linearName"
+                android:background="@color/lightgrey"
+
+                />
+
+
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:padding="@dimen/_5sdp"
+            android:layout_height="wrap_content">
+
+            <com.reward.dne.utils.CustomTextViewSemiBold
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Email address"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:id="@+id/textEmail"
+                android:textSize="12sp"
+                />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/linearEmail"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:layout_below="@+id/textEmail"
+                android:orientation="horizontal"
+                >
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:background="@null"
+                    android:textSize="14sp"
+                    android:fontFamily="@font/sourcesanspro_semibold"
+                    android:id="@+id/editEmail"
+                    android:inputType="textEmailAddress"
+                    android:layout_gravity="center"
+                    android:layout_toRightOf="@+id/imgEmail"
+                    android:layout_below="@+id/textEmail"
+                    android:hint="example@email.com"
+
+                    />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.1dp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_below="@+id/linearEmail"
+                android:background="@color/lightgrey"
+
+                />
+
+
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:padding="@dimen/_5sdp"
+            android:layout_height="wrap_content">
+
+            <com.reward.dne.utils.CustomTextViewSemiBold
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Mobile Number"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:id="@+id/textMobile"
+                android:textSize="12sp"
+                />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/linearMob"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:layout_below="@+id/textMobile"
+                android:orientation="horizontal"
+                >
+
+
+                <com.reward.dne.utils.CustomTextViewSemiBold
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/imgMob"
+                    android:text="+91"
+                    android:layout_centerVertical="true"
+                    android:id="@+id/text91"
+                    android:textColor="@color/black"
+                    android:textSize="14sp"
+                    />
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:background="@null"
+                    android:fontFamily="@font/sourcesanspro_semibold"
+                    android:inputType="number"
+                    android:textSize="14sp"
+                    android:maxLength="10"
+                    android:id="@+id/editMobile"
+                    android:layout_marginLeft="@dimen/_7sdp"
+                    android:layout_gravity="center"
+                    android:layout_toRightOf="@+id/imgMob"
+                    android:layout_below="@+id/textEmail"
+                    android:hint="9876543210"
+
+                    />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.1dp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_below="@+id/linearMob"
+                android:background="@color/lightgrey"
+
+                />
+
+
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:padding="@dimen/_5sdp"
+            android:layout_height="wrap_content">
+
+            <com.reward.dne.utils.CustomTextViewSemiBold
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Gender"
+                android:id="@+id/textGender"
+                android:textSize="13sp"
+                />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/linearGender"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:layout_below="@+id/textGender"
+                android:orientation="horizontal"
+                >
+
+                <Spinner
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:id="@+id/spinGender"
+                    android:layout_gravity="center"
+                    android:layout_toRightOf="@+id/imgGender"
+                    android:layout_below="@+id/textEmail"
+                    />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.1dp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_below="@+id/linearGender"
+                android:background="@color/lightgrey"
+
+                />
+
+
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:padding="@dimen/_5sdp"
+            android:layout_height="wrap_content">
+
+            <com.reward.dne.utils.CustomTextViewSemiBold
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Occupation"
+                android:id="@+id/textOccupation"
+                android:textSize="13sp"
+                />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/linearOccupation"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:layout_below="@+id/textOccupation"
+                android:orientation="horizontal"
+                >
+
+                <Spinner
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:id="@+id/spinOccupation"
+                    android:layout_gravity="center"
+                    android:layout_toRightOf="@+id/imgGender"
+                    android:layout_below="@+id/textEmail"
+                    />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.1dp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_below="@+id/linearOccupation"
+                android:background="@color/lightgrey"
+
+                />
+
+
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>

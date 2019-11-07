@@ -1,0 +1,323 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment.RedeemNowFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_15sdp"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/_7sdp">
+
+                <com.reward.dne.utils.CustomTextViewSemiBold
+                    android:id="@+id/textRecharge"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_5sdp"
+                    android:text="Please choose your recharge mode"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/textRecharge"
+                    android:layout_marginTop="@dimen/_15sdp"
+                    android:gravity="center"
+                    android:id="@+id/rdgOperator"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="start"
+                        android:layout_weight="1"
+                        android:checked="true"
+                        android:id="@+id/rdPrepaid"
+                        android:fontFamily="@font/sourcesanspro_semibold"
+                        android:text="Prepaid"
+                        android:textColor="@drawable/radiobtn_selector"
+                        android:textSize="13sp" />
+
+                    <RadioButton
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:id="@+id/rdPostpaid"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/sourcesanspro_semibold"
+                        android:text="Postpaid"
+                        android:textColor="@drawable/radiobtn_selector"
+                        android:textSize="13sp" />
+
+                    <RadioButton
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="end"
+                        android:id="@+id/rdDth"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/sourcesanspro_semibold"
+                        android:text="DTH"
+                        android:textColor="@drawable/radiobtn_selector"
+                        android:textSize="13sp" />
+
+                </RadioGroup>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/relDth"
+                android:visibility="gone"
+                android:layout_marginHorizontal="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_10sdp">
+
+                <com.reward.dne.utils.CustomTextViewSemiBold
+                    android:id="@+id/textDth"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="DTH Number"
+                    android:textSize="12sp" />
+
+                <EditText
+                    android:id="@+id/editDth"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/textDth"
+                    android:layout_marginTop="@dimen/_5sdp"
+
+                    android:background="@null"
+                    android:fontFamily="@font/sourcesanspro_semibold"
+                    android:hint="Enter DTH Number"
+                    android:inputType="number"
+                    android:maxLength="15"
+                    android:textSize="15sp">
+
+                </EditText>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_below="@+id/editDth"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:background="@color/greyline" />
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/relMob"
+                android:layout_marginHorizontal="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_10sdp">
+
+                <com.reward.dne.utils.CustomTextViewSemiBold
+                    android:id="@+id/textMob"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:text="Mobile"
+                    android:textSize="12sp" />
+
+                <RelativeLayout
+                    android:id="@+id/relativemob"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/textMob"
+                    android:layout_marginTop="@dimen/_5sdp">
+
+                    <ImageView
+                        android:id="@+id/imgMobile"
+                        android:layout_width="18dp"
+                        android:layout_height="18dp"
+                        android:layout_centerVertical="true"
+                        android:src="@mipmap/mobgrey" />
+
+                    <com.reward.dne.utils.CustomTextViewSemiBold
+                        android:id="@+id/text91"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/_5sdp"
+
+                        android:layout_toRightOf="@+id/imgMobile"
+                        android:text="+91"
+                        android:textColor="@color/black"
+                        android:textSize="15sp" />
+
+                    <EditText
+                        android:id="@+id/edtMobile"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/_5sdp"
+                        android:layout_toRightOf="@+id/text91"
+                        android:background="@null"
+                        android:fontFamily="@font/sourcesanspro_semibold"
+                        android:hint="mobile no"
+                        android:inputType="number"
+                        android:maxLength="10"
+                        android:textColor="@color/black"
+                        android:textSize="15sp"
+
+                        />
+
+                    <ImageView
+                        android:id="@+id/imgContact"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="@dimen/_10sdp"
+                        android:src="@mipmap/contact" />
+
+
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_below="@+id/relativemob"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:background="@color/greyline" />
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_10sdp">
+
+                <com.reward.dne.utils.CustomTextViewSemiBold
+                    android:id="@+id/textOperator"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Operator"
+                    android:textSize="12sp" />
+
+                <Spinner
+                    android:id="@+id/spinnerOperator"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/textOperator"
+                    android:layout_marginLeft="-8dp"
+                    android:layout_marginTop="@dimen/_5sdp">
+
+                </Spinner>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_below="@+id/spinnerOperator"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:background="@color/greyline" />
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_10sdp">
+
+                <com.reward.dne.utils.CustomTextViewSemiBold
+                    android:id="@+id/textAmount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Amount"
+                    android:textSize="12sp" />
+
+                <EditText
+                    android:id="@+id/editAmount"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/textAmount"
+                    android:layout_marginTop="@dimen/_5sdp"
+
+                    android:background="@null"
+                    android:fontFamily="@font/sourcesanspro_semibold"
+                    android:hint="Enter amount"
+                    android:inputType="number"
+                    android:maxLength="5"
+                    android:textSize="15sp">
+
+                </EditText>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_below="@+id/editAmount"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:background="@color/greyline" />
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/_30sdp">
+
+                <com.reward.dne.utils.CustomTextViewSemiBold
+                    android:id="@+id/textavailable"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Available balance : "
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+
+                <com.reward.dne.utils.CustomTextViewSemiBold
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/textavailable"
+                    android:id="@+id/textavailableAmount"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="17sp" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/relativeProceed"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_35sdp"
+                android:layout_below="@+id/relativeEdit"
+                android:layout_marginHorizontal="@dimen/_55sdp"
+                android:layout_marginVertical="@dimen/_25sdp"
+                android:background="@drawable/curve_orange"
+                android:hapticFeedbackEnabled="true">
+
+                <com.reward.dne.utils.CustomTextViewBold
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="Proceed"
+                    android:textColor="@color/white"
+                    android:textSize="15sp" />
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+
+</RelativeLayout>

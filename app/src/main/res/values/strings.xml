@@ -1,0 +1,60 @@
+<resources>
+    <string name="app_name">Download and Earn</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="Loading...">Loading</string>
+    <string name="help">Help</string>
+    <string name="name">Name</string>
+    <string name="email">Email</string>
+    <string name="subject">Subject</string>
+    <string name="describe">Describe</string>
+    <string name="earnings">Earnings</string>
+    <string name="earning_history">Earning History</string>
+    <string name="faq">FAQ</string>
+    <string name="home">Home</string>
+    <string name="hotapps">Hot Apps</string>
+    <string name="invite_to_earn">Invite to Earn</string>
+    <string name="myprofile">My Profile</string>
+    <string name="pro_membership">Pro Membership</string>
+    <string name="rate_my_app">Rate my App</string>
+    <string name="redeem">Redeem</string>
+    <string name="update">Update</string>
+    <string name="edit">Edit</string>
+
+    <string name="server_error">server error</string>
+    <string name="no_internet">No internet Connection</string>
+    <string name="enter_valid_mobile">Enter valid mobile number</string>
+    <string name="logout">Logout</string>
+    <string name="token">Authorization</string>
+    <string name="no_apps">No Apps found</string>
+    <string name="there_is_a_problem_in_generating_link">There is a problem in generating the link</string>
+    <string name="image_url">https://downloadandearn.com/storage/app_image/</string>
+    <string name="please_try_again">Please try again later</string>
+    <string name="no_apps_atthe_moment">No apps at the moment</string>
+    <string name="tap_again">Tap again to Exit</string>
+    <string name="loading">Loading..</string>
+    <string name="enter_valid_email">Enter valid email</string>
+    <string name="checksum_failed">Checksum Failed</string>
+    <string name="mobile_mandatory">Mobile number is mandatory</string>
+    <string name="enter_otp_value">Enter otp value</string>
+    <string name="otp_verified">Otp verified</string>
+    <string name="incorrect_otp">Incorrect OTP</string>
+    <string name="in_progres">In Progress</string>
+    <string name="allow_permission_in_settings">Allow Permission in settings</string>
+    <string name="under_developement">Under Development</string>
+
+    <array name="operators">
+        <item>Airtel</item>
+        <item>Jio</item>
+        <item>Vodafone</item>
+        <item>BSNL</item>
+        <item>SunDirect</item>
+    </array>
+
+    <array name="gender">
+        <item>Male</item>
+        <item>Female</item>
+    </array>
+
+</resources>

@@ -1,0 +1,329 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.RedeemActivity">
+
+
+    <RelativeLayout
+        android:id="@+id/toolHeader"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_40sdp"
+        android:background="@color/colorPrimary"
+        android:padding="@dimen/_10sdp">
+
+        <ImageView
+            android:id="@+id/imgBackarrowRedeem"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/arrow" />
+
+        <com.reward.dne.utils.CustomTextViewSemiBold
+            android:id="@+id/headerAppDetail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:textColor="@color/white"
+            android:text="Redeem Points"
+            android:textSize="18sp" />
+
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/info"
+            android:visibility="gone"/>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="@dimen/_10sdp"
+        android:layout_below="@+id/toolHeader">
+
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_gravity="center"
+            android:src="@mipmap/paytmlogo"
+            />
+
+        <com.reward.dne.utils.CustomTextViewNormal
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/_25sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_gravity="center"
+            android:textColor="@color/colorPrimary"
+            android:text="Please enter your mobile to redeem your points to PayTM"
+            />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:padding="@dimen/_5sdp"
+            android:layout_height="wrap_content">
+
+            <com.reward.dne.utils.CustomTextViewSemiBold
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Mobile"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:id="@+id/textMobileRedeem"
+                android:textSize="13sp"
+                />
+            <com.reward.dne.utils.CustomTextViewSemiBold
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="*"
+                android:visibility="visible"
+                android:textColor="@color/colorPrimary"
+                android:layout_toRightOf="@+id/textMobileRedeem"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:textSize="13sp"
+                />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/linearMob"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:layout_below="@+id/textMobileRedeem"
+                android:orientation="horizontal"
+                >
+
+                <ImageView
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:id="@+id/imgMob"
+                    android:layout_gravity="center"
+                    android:src="@mipmap/mobgrey"
+                    />
+                <com.reward.dne.utils.CustomTextViewSemiBold
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/imgMob"
+                    android:text="+91"
+                    android:layout_centerVertical="true"
+
+                    android:id="@+id/text91"
+                    android:layout_marginLeft="@dimen/_5sdp"
+                    android:textColor="@color/black"
+                    android:textSize="15sp"
+                    />
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:background="@null"
+                    android:fontFamily="@font/sourcesanspro_semibold"
+                    android:inputType="number"
+                    android:textSize="15sp"
+                    android:maxLength="10"
+                    android:textColor="@color/black"
+                    android:id="@+id/editMobileRedeem"
+                    android:layout_marginLeft="@dimen/_7sdp"
+                    android:layout_gravity="center"
+                    android:layout_toRightOf="@+id/imgMob"
+                    android:layout_below="@+id/textEmail"
+                    android:hint="9876543210"
+
+                    />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.1dp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_below="@+id/linearMob"
+                android:background="@color/lightgrey"
+
+                />
+
+
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:padding="@dimen/_5sdp"
+            android:visibility="gone"
+            android:layout_height="wrap_content">
+
+            <com.reward.dne.utils.CustomTextViewSemiBold
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Email"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:id="@+id/textEmailRedeem"
+                android:textSize="13sp"
+                />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/linearEmail"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:layout_below="@+id/textEmailRedeem"
+                android:orientation="horizontal"
+                >
+
+                <ImageView
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:id="@+id/imgEmail"
+                    android:layout_gravity="center"
+                    android:src="@mipmap/envelope"
+                    />
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:background="@null"
+                    android:textSize="15sp"
+                    android:fontFamily="@font/sourcesanspro_semibold"
+                    android:id="@+id/editEmailRedeem"
+                    android:inputType="textEmailAddress"
+                    android:layout_marginLeft="@dimen/_7sdp"
+                    android:layout_gravity="center"
+                    android:layout_toRightOf="@+id/imgEmail"
+                    android:layout_below="@+id/textEmail"
+                    android:hint="example@email.com"
+
+                    />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.1dp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_below="@+id/linearEmail"
+                android:background="@color/lightgrey"
+
+                />
+
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:padding="@dimen/_5sdp"
+            android:layout_height="wrap_content">
+
+            <com.reward.dne.utils.CustomTextViewSemiBold
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Amount"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:id="@+id/textAmountRedeem"
+                android:textSize="13sp"
+                />
+            <com.reward.dne.utils.CustomTextViewSemiBold
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="*"
+                android:visibility="visible"
+                android:textColor="@color/colorPrimary"
+                android:layout_toRightOf="@+id/textAmountRedeem"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:textSize="13sp"
+                />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/linearAmount"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:layout_below="@+id/textAmountRedeem"
+                android:orientation="horizontal"
+                >
+
+                <ImageView
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:id="@+id/imgAmount"
+                    android:layout_gravity="center"
+                    android:src="@mipmap/envelope"
+                    />
+
+                <EditText
+                    android:id="@+id/editAmountRedeem"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/textEmail"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="@dimen/_7sdp"
+                    android:layout_toRightOf="@+id/imgEmail"
+                    android:background="@null"
+                    android:fontFamily="@font/sourcesanspro_semibold"
+                    android:hint="1"
+                    android:inputType="number"
+                    android:maxLength="6"
+                    android:textSize="15sp"
+
+                    />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.1dp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_below="@+id/linearAmount"
+                android:background="@color/lightgrey"
+
+                />
+
+
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_35sdp"
+            android:hapticFeedbackEnabled="true"
+            android:id="@+id/relativeContinue"
+            android:layout_marginVertical="@dimen/_25sdp"
+            android:layout_marginHorizontal="@dimen/_15sdp"
+            android:layout_below="@+id/relativeEdit"
+            android:background="@drawable/curve_orange">
+
+            <com.reward.dne.utils.CustomTextViewBold
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Continue"
+                android:textSize="15sp"
+                android:layout_centerInParent="true"
+                android:textColor="@color/white"
+                />
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@mipmap/arrow"
+                android:rotation="180"
+                android:layout_marginRight="@dimen/_20sdp"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+
+
+
+</RelativeLayout>
